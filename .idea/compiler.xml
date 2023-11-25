@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="homeaccountant.homeaccountant.main~1" target="11" />
-      <module name="homeaccountant.homeaccountant.test~1" target="11" />
+      <module name="homeaccountant.homeaccountant.main" target="11" />
+      <module name="homeaccountant.homeaccountant.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

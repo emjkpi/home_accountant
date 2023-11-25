@@ -23,4 +23,32 @@ public class MyRESTController {
         logger.info("Retrieved users: {}", allUsers);
         return allUsers;
     }
+
+    @GetMapping("/users/{id}")
+    public User user(@PathVariable int id) {
+        User user = userService.getUser(id);
+
+        return user;
+    }
+
+    @PostMapping("/users")
+    public User addNewUser(@RequestBody User user) {
+
+        userService.saveUser(user);
+        return user;
+    }
+
+    @PutMapping("/users")
+    public User updateUser(@RequestBody User user) {
+
+        userService.saveUser(user);
+        return user;
+    }
+
+    @DeleteMapping("/users/{id}")
+    public String deleteUser(@PathVariable int id) {
+
+        userService.deleteUser(id);
+        return "User with ID = " + id + " was deleted";
+    }
 }
